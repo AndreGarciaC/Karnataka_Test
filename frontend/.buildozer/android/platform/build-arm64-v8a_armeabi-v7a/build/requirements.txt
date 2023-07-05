@@ -1,0 +1,11 @@
+certifi
+chardet
+cycler
+fonttools
+idna
+kivymd
+packaging
+pyparsing
+python-dateutil
+requests
+urllib3

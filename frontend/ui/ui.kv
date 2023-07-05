@@ -1,0 +1,54 @@
+<PieChartScreen>:
+    BoxLayout:
+        size_hint: 1, 1
+        orientation: 'vertical'
+        id: chart_container
+
+        canvas:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+        MDFlatButton:
+            id: dropdown_button
+            text: "Open Dropdown Menu"
+            pos_hint: {"center_x": 0.5}
+            on_release: app.show_dropdown_menu()
+
+<BarChartScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        id: chart_container
+        canvas:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+    BoxLayout:
+        orientation: "vertical"
+        BoxLayout:
+            id: chip_container
+
+<IntroScreen>:
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<OneLineAvatarIconListItem>:
+    font_name: "assets/fonts/PatrickHand-Regular.ttf"
+
+
+MDNavigationDrawer:
+    id: nav_drawer
+    canvas.before:
+        Color:
+            rgba: 0.949, 0.768, 0.816, 1  # Set the background color here
+        Rectangle:
+            pos: self.pos
+            size: self.size

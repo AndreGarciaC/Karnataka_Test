@@ -1,0 +1,23 @@
+<PieChartScreen>:
+    BoxLayout:
+        size_hint: 1, 1
+        orientation: 'vertical'
+        id: chart_container
+
+        canvas:
+            Color:
+                rgba: 1, 1, 1, 1
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+<BarChartScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        id: chart_container
+
+MDNavigationDrawer:
+    md_bg_color: [0, 0, 0, 0.7]
+    size_hint: 1, None
+    height: root.height * 1
+    pos_hint: {'top': 1}
